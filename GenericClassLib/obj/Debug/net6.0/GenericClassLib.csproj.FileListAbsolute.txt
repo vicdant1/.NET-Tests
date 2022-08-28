@@ -1,0 +1,12 @@
+C:\_projects\GenericClassLib\GenericClassLib\bin\Debug\net6.0\GenericClassLib.deps.json
+C:\_projects\GenericClassLib\GenericClassLib\bin\Debug\net6.0\GenericClassLib.dll
+C:\_projects\GenericClassLib\GenericClassLib\bin\Debug\net6.0\GenericClassLib.pdb
+C:\_projects\GenericClassLib\GenericClassLib\obj\Debug\net6.0\GenericClassLib.csproj.AssemblyReference.cache
+C:\_projects\GenericClassLib\GenericClassLib\obj\Debug\net6.0\GenericClassLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\_projects\GenericClassLib\GenericClassLib\obj\Debug\net6.0\GenericClassLib.AssemblyInfoInputs.cache
+C:\_projects\GenericClassLib\GenericClassLib\obj\Debug\net6.0\GenericClassLib.AssemblyInfo.cs
+C:\_projects\GenericClassLib\GenericClassLib\obj\Debug\net6.0\GenericClassLib.csproj.CoreCompileInputs.cache
+C:\_projects\GenericClassLib\GenericClassLib\obj\Debug\net6.0\GenericClassLib.dll
+C:\_projects\GenericClassLib\GenericClassLib\obj\Debug\net6.0\refint\GenericClassLib.dll
+C:\_projects\GenericClassLib\GenericClassLib\obj\Debug\net6.0\GenericClassLib.pdb
+C:\_projects\GenericClassLib\GenericClassLib\obj\Debug\net6.0\ref\GenericClassLib.dll
