@@ -1,3 +1,5 @@
+using GenericClassLib;
+using Xunit.Sdk;
 using static GenericClassLib.Calculator;
 
 namespace Calculator.Tests
@@ -5,6 +7,7 @@ namespace Calculator.Tests
     public class OperationsTests
     {
         [Fact(DisplayName = "Sum_Unit_Test")]
+        [Trait("Category", "Unit")]
         public void SumUnderNormalNumbersShouldReturnIntegerSum()
         {
             // AAA -> Arrange, Act, Assert
@@ -25,6 +28,7 @@ namespace Calculator.Tests
         }
 
         [Fact]
+        [Trait("Category", "Unit")]
         public void DivideUnderNormalNumbersShouldReturnDecimal()
         {
             // Arrange
@@ -42,6 +46,7 @@ namespace Calculator.Tests
         }
 
         [Fact(Skip = "Not implemented")]
+        [Trait("Category", "Unit")]
         public void MultiplyMemberZeroShouldReturnZero()
         {
             // Arrange
@@ -54,17 +59,96 @@ namespace Calculator.Tests
             Assert.Equal(0, result);
         }
 
+        [Theory]
+        [InlineData(1, 1, 0)]
+        [InlineData(1, 2, -1)]
+        [InlineData(50, 30, 220)]
+        [Trait("Category", "Unit - Theory")]
+        public void SubtractWithManyValues(int n1, int n2, int expected)
+        {
+            // Arrange
+            int result;
+
+            // Act
+
+            result = Sub(n1, n2);
+
+            // Assert
+
+            try
+            {
+                Assert.Equal(result, expected);
+            }
+            catch(EqualException ex)
+            {
+                throw new XunitException($"Custom message => \n{ex.Message}");
+            }
+        }
+
+
+        [Theory]
+        [ClassData(typeof(CalculatorTestData))]
+        [Trait("Category", "Unit - Theory")]
+        public void SubtractMassiveValues(int n1, int n2, int expected)
+        {
+            // Arrange
+            int result;
+            // Act
+
+            result = Sub(n1, n2);
+
+            // Assert
+            try
+            {
+                Assert.Equal(result, expected);
+            }
+            catch(EqualException ex)
+            {
+                throw new XunitException($"Test failed\nExeption message: {ex.Message}");
+            }
+        }
+
+        [Theory]
+        [MemberData(nameof(Data))]
+        [Trait("Category", "Unit - Theory")]
+        public void MultiplyWithMassiveValues(int n1, int n2, int expected)
+        {
+            // Arrange
+            int result;
+            // Act
+
+            result = Multiply(n1, n2);
+
+            // Assert
+
+            try
+            {
+                Assert.Equal(result, expected);
+            }
+            catch(EqualException ex)
+            {
+                throw new XunitException($"Custom message assertion:\n{ex.Message}");
+            }
+        }
+
+
+        public static IEnumerable<object[]> Data => new List<object[]>
+        {
+            new object[] { 1, 2, 2 },
+            new object[] { 4, 5, 12 },
+            new object[] { 4, 5, 20 },
+            new object[] { 4, 7, 28 },
+            new object[] { 4, 5, 6 }
+        };
+
         /*
         resume study section
         {
-            Skip
-            theory[theory]
-            _sut(using instances)
-            member data
-            IEnumerabl<object[]>
-            classdata
-            parallelization
-            traist
+            Skip x
+            theory[theory] x
+            classdata x
+            member data x
+            traist x
         }
         */
     }
