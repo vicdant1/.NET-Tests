@@ -39,5 +39,18 @@ namespace Calculator.Tests
 
         }
 
+        /*
+        resume study section
+        {
+            Skip
+            theory[theory]
+            _sut(using instances)
+            member data
+            IEnumerabl<object[]>
+            classdata
+            parallelization
+            traist
+        }
+        */
     }
 }
