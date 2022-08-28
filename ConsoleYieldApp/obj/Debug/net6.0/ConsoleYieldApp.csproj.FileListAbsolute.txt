@@ -1,0 +1,15 @@
+C:\_projects\GenericClassLib\ConsoleYieldApp\bin\Debug\net6.0\ConsoleYieldApp.exe
+C:\_projects\GenericClassLib\ConsoleYieldApp\bin\Debug\net6.0\ConsoleYieldApp.deps.json
+C:\_projects\GenericClassLib\ConsoleYieldApp\bin\Debug\net6.0\ConsoleYieldApp.runtimeconfig.json
+C:\_projects\GenericClassLib\ConsoleYieldApp\bin\Debug\net6.0\ConsoleYieldApp.dll
+C:\_projects\GenericClassLib\ConsoleYieldApp\bin\Debug\net6.0\ConsoleYieldApp.pdb
+C:\_projects\GenericClassLib\ConsoleYieldApp\obj\Debug\net6.0\ConsoleYieldApp.csproj.AssemblyReference.cache
+C:\_projects\GenericClassLib\ConsoleYieldApp\obj\Debug\net6.0\ConsoleYieldApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\_projects\GenericClassLib\ConsoleYieldApp\obj\Debug\net6.0\ConsoleYieldApp.AssemblyInfoInputs.cache
+C:\_projects\GenericClassLib\ConsoleYieldApp\obj\Debug\net6.0\ConsoleYieldApp.AssemblyInfo.cs
+C:\_projects\GenericClassLib\ConsoleYieldApp\obj\Debug\net6.0\ConsoleYieldApp.csproj.CoreCompileInputs.cache
+C:\_projects\GenericClassLib\ConsoleYieldApp\obj\Debug\net6.0\ConsoleYieldApp.dll
+C:\_projects\GenericClassLib\ConsoleYieldApp\obj\Debug\net6.0\refint\ConsoleYieldApp.dll
+C:\_projects\GenericClassLib\ConsoleYieldApp\obj\Debug\net6.0\ConsoleYieldApp.pdb
+C:\_projects\GenericClassLib\ConsoleYieldApp\obj\Debug\net6.0\ConsoleYieldApp.genruntimeconfig.cache
+C:\_projects\GenericClassLib\ConsoleYieldApp\obj\Debug\net6.0\ref\ConsoleYieldApp.dll
