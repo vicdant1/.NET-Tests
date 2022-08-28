@@ -3,6 +3,13 @@ using ConsoleYieldApp.Entities;
 
 Console.WriteLine("Program started");
 
+IEnumerable<Product> products = ProductManagerHelper.CreateProducts();
+
+EShopManager manager = new EShopManager();
+
+manager.AddToKart(products.First(), products.Last(), products.ElementAt(2));
+
+
 
 #region yield_return
 //IEnumerable<Person> People = PeopleHelper.GetPeople();
@@ -50,6 +57,43 @@ Console.WriteLine("Program started");
     }
 
  */
+
+
+#endregion
+
+
+#region params_keyword
+
+
+public class Product
+{
+    public Guid Id { get; set; }
+    public string Name { get; set; } = "";
+
+    public Product(string Name)
+    {
+        this.Id = Guid.NewGuid();
+        this.Name = Name;
+    }
+}
+
+public static class ProductManagerHelper
+{
+    public static IEnumerable<Product> CreateProducts()
+    {
+        for (int i = 0; i < 10; i++)
+            yield return new Product($"Product {i}");
+    }
+}
+
+public class EShopManager
+{
+    public void AddToKart(params Product[] products)
+    {
+        foreach (Product product in products)
+            Console.WriteLine($"Product: {product.Name} ({product.Id})");
+    }
+}
 
 
 #endregion
