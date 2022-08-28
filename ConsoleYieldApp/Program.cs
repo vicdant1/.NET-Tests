@@ -7,8 +7,8 @@ IEnumerable<Person> People = PeopleHelper.GetPeople();
 
 foreach (var person in People)
 {
-    //if (int.Parse(person.Cpf) == 5)
-    //    break;
+    if (int.Parse(person.Cpf) == 5)
+        break;
 
     Console.WriteLine($"Id: {person.Id} || CPF: {person.Cpf}");
 }
