@@ -1,3 +1,5 @@
+using static GenericClassLib.Calculator;
+
 namespace Calculator.Tests
 {
     public class OperationsTests
@@ -14,7 +16,7 @@ namespace Calculator.Tests
 
             // Act
 
-            int result = GenericClassLib.Calculator.Sum(n1, n2);
+            int result = Sum(n1, n2);
 
             // Assert
 
@@ -32,11 +34,24 @@ namespace Calculator.Tests
             decimal expectedResult = n1 / n2;
 
             // Act
-            decimal result = GenericClassLib.Calculator.Divide(n1, n2);
+            decimal result = Divide(n1, n2);
 
             // Assert
             Assert.Equal(expectedResult, result);
 
+        }
+
+        [Fact(Skip = "Not implemented")]
+        public void MultiplyMemberZeroShouldReturnZero()
+        {
+            // Arrange
+            int n1 = 0;
+            int n2 = 100;
+
+            // Act
+            int result = Multiply(n1, n2);
+            // Assert
+            Assert.Equal(0, result);
         }
 
         /*
