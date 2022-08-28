@@ -140,16 +140,5 @@ namespace Calculator.Tests
             new object[] { 4, 7, 28 },
             new object[] { 4, 5, 6 }
         };
-
-        /*
-        resume study section
-        {
-            Skip x
-            theory[theory] x
-            classdata x
-            member data x
-            traist x
-        }
-        */
     }
 }
