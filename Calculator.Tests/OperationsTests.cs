@@ -21,5 +21,23 @@ namespace Calculator.Tests
             Assert.Equal(expectedResult, result);
 
         }
+
+        [Fact]
+        public void DivideUnderNormalNumbersShouldReturnDecimal()
+        {
+            // Arrange
+            int n1 = 1;
+            int n2 = 2;
+
+            decimal expectedResult = n1 / n2;
+
+            // Act
+            decimal result = GenericClassLib.Calculator.Divide(n1, n2);
+
+            // Assert
+            Assert.Equal(expectedResult, result);
+
+        }
+
     }
 }
